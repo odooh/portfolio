@@ -21,6 +21,7 @@ html, body {
     color: white;
     font-size: 2rem;
     padding-top: 33%;
+    /*z-index: 5;*/
 }
 .item3 {
     background-color: black;
@@ -218,7 +219,7 @@ img {
     
 }
 /* 이 부분은 나중에 js로 변경*/
-.container div:hover {
+.container > div:hover {
     filter: invert(100%);
 }
 .dropdown {
@@ -237,4 +238,17 @@ img {
     border-bottom: black;
     padding: 4% 20%;
     margin-top: 4%
+}
+.lettering1-content {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 3;
+}
+#x_btn {
+    text-align: right;
+    font-size: 5rem;
+    margin-right: 3rem;
 }
