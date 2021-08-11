@@ -1,0 +1,233 @@
+@media screen and (min-width:1280px){
+* {
+    font-family: 'Avenir Next';
+    text-align: center ;
+}
+html, body {
+    height:100%;
+    width:100%;
+    margin: 0;
+}
+.container {
+    height: 100%;
+	width: 100%;
+	display: grid;
+    grid-template-columns : repeat(5, 1fr);
+    grid-template-rows : repeat(3, 1fr);
+}
+
+.item1 {
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    padding-top: 33%;
+}
+.item3 {
+    background-color: black;
+    color : white;
+} 
+.item5 {
+    background-color: black;
+    color : white;
+}
+.item7 {
+    background-color: black;
+    color : white;
+}
+.item9 {
+    background-color: black;
+    color : white;
+}
+.item11 {
+    background-color: black;
+    color : white;
+}
+.item13 {
+    background-color: black;
+    color : white;
+}
+.item15 {
+    background-color: black;
+    color : white;
+}
+
+.item2 {
+    background-color: white;
+    color : black;
+}
+.item4 {
+    background-color: white;
+    color : black;
+}
+.item6 {
+    background-color: white;
+    color : black;
+}
+.item8 {
+    background-color: white;
+    color : black;
+}
+.item10 {
+    background-color: white;
+    color : black;
+}
+.item12 {
+    background-color: white;
+    color : black;
+}
+.item14 {
+    background-color: white;
+    color : black;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 20%;
+    /*크기를 나중에 수정해야한다*/
+    background-color: #f00;
+    width: 20%;
+    height: 33.33333%; 
+    z-index: 2;
+    padding:0%;
+    margin:0%;
+}
+}
+@media screen and (max-width:1280px) {
+    * {
+        font-family: 'Avenir Next';
+        text-align: center ;
+    }
+    html, body {
+        height:100%;
+        width:100%;
+        margin: 0;
+    }
+    .container {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns : repeat(2, 1fr);
+        grid-template-rows : repeat(3, 1fr);
+    }
+    
+    /*.container div {
+        aspect-ratio: 1;
+    }*/
+    .item1 {
+        background-color: black;
+        color: white;
+        font-size: 3rem;
+    }
+    .item3 {
+        background-color: white;
+        color : black;
+    } 
+    .item5 {
+        background-color: black;
+        color : white;
+    }
+    .item7 {
+        background-color: black;
+        color : white;
+        display: none;
+    }
+    .item9 {
+        background-color: black;
+        color : white;
+        display: none;
+    }
+    .item11 {
+        background-color: black;
+        color : white;
+        display: none;
+    }
+    .item13 {
+        background-color: black;
+        color : white;
+        display: none;
+    }
+    .item15 {
+        background-color: black;
+        color : white;
+        display: none;
+    }
+    
+    .item2 {
+        background-color: white;
+        color : black;
+    }
+    .item4 {
+        background-color: black;
+        color : white;
+    }
+    .item6 {
+        background-color: white;
+        color : black;
+    }
+    .item8 {
+        background-color: white;
+        color : black;
+        display: none;
+    }
+    .item10 {
+        background-color: white;
+        color : black;
+        display: none;
+    }
+    .item12 {
+        background-color: white;
+        color : black;
+        display: none;
+    }
+    .item14 {
+        background-color: white;
+        color : black;
+        display: none;
+
+}
+img {
+    object-fit: cover;
+    padding: 1rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 50%;
+    /*크기를 나중에 수정해야한다*/
+    background-color: #f00;
+    width: 50%;
+    height: 33.33333%; 
+    z-index: 2;
+    padding:0%;
+    margin:0%;
+}
+}
+
+
+.item2 {
+    background-image:url("../contents/lettering/k.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+/* 이 부분은 나중에 js로 변경*/
+.container div:hover {
+    filter: invert(100%);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content div {
+    color: white;
+    padding: 16px 16px;
+    text-decoration: none;
+    display: block;
+}
+.category {
+    display: block;
+    border-bottom: black;
+    padding: 4% 20%;
+    margin-top: 8%
+}
