@@ -210,6 +210,13 @@ img {
     background-repeat: no-repeat;
     background-size:contain;
 }
+.item3 {
+    background-image:url("../contents/lettering/h.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-color:blue;
+    
+}
 /* 이 부분은 나중에 js로 변경*/
 .container div:hover {
     filter: invert(100%);
@@ -229,5 +236,5 @@ img {
     display: block;
     border-bottom: black;
     padding: 4% 20%;
-    margin-top: 8%
+    margin-top: 4%
 }
