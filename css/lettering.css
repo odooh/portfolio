@@ -1,8 +1,16 @@
-@media screen and (min-width:1280px){
 * {
-    font-family: 'Avenir Next';
-    text-align: center ;
+    font-family: myriad-pro, sans-serif;
+
+    font-weight: 400;
+
+    font-style: normal;
+
+    text-align: center;
 }
+
+
+@media screen and (min-width:1280px){
+
 html, body {
     height:100%;
     width:100%;
@@ -94,10 +102,7 @@ html, body {
 }
 }
 @media screen and (max-width:1280px) {
-    * {
-        font-family: 'Avenir Next';
-        text-align: center ;
-    }
+   
     html, body {
         height:100%;
         width:100%;
@@ -250,6 +255,7 @@ img {
 }
 #x_btn {
     text-align: right;
-    font-size: 5rem;
+    font-size: 3rem;
     margin-right: 3rem;
+    margin-top: 2rem;
 }
