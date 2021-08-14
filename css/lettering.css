@@ -224,7 +224,7 @@ img {
     
 }
 /* 이 부분은 나중에 js로 변경*/
-.container > div:hover {
+.container div:not(.lettering1-content, .lettering1-content div):hover{
     filter: invert(100%);
 }
 .dropdown {
@@ -253,9 +253,33 @@ img {
     background-color: white;
     z-index: 3;
 }
+
 #x_btn {
     text-align: right;
     font-size: 3rem;
     margin-right: 3rem;
     margin-top: 2rem;
+}
+.content-grid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.representimg {
+    width: 50%;
+    overflow:scroll;
+    height: 100%;
+}
+.representimg img {
+    width: 100%;
+}
+.description {
+    color:white;
+    width: 50%;
+    overflow:scroll; 
+    height:100%; 
+    padding:10px; 
+    background-color:black;
 }
