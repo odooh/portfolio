@@ -9,6 +9,7 @@
 }
 
 
+
 @media screen and (min-width:1280px){
 
 html, body {
@@ -27,8 +28,8 @@ html, body {
 .item1 {
     background-color: black;
     color: white;
-    font-size: 2rem;
-    padding-top: 33%;
+    font-size: 1.5rem;
+    padding-top: 38%;
     /*z-index: 5;*/
 }
 .item3 {
@@ -93,7 +94,7 @@ html, body {
     position: absolute;
     left: 20%;
     /*크기를 나중에 수정해야한다*/
-    background-color: #f00;
+    background-color: #000;
     width: 20%;
     height: 33.33333%; 
     z-index: 2;
@@ -199,17 +200,37 @@ img {
 .dropdown-content {
     display: none;
     position: absolute;
-    left: 50%;
+    left: 20%;
     /*크기를 나중에 수정해야한다*/
-    background-color: #f00;
-    width: 50%;
+    background-color: #000;
+    width: 20%;
     height: 33.33333%; 
     z-index: 2;
     padding:0%;
     margin:0%;
+    background: linear-gradient(90deg, #000, #000, #000, #fff);
+    background-size: 200% 200%;
+    animation: AnimationName 15s ease infinite;
 }
 }
 
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 100%}
+    100%{background-position:100% 200%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 100%}
+    100%{background-position:100% 200%}
+
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 100%}
+    100%{background-position:100% 200%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 100%}
+    100%{background-position:100% 200%}
+}
 
 .item2 {
     background-image:url("../contents/lettering/k.png");
@@ -221,12 +242,25 @@ img {
     background-repeat: no-repeat;
     background-size:contain;
     background-color:blue;
+    background-size: 65%;
+    background-position: center;
     
 }
 /* 이 부분은 나중에 js로 변경*/
-.container div:not(.lettering1-content, .lettering1-content div):hover{
+
+.container>div:hover {
     filter: invert(100%);
 }
+
+a:hover {
+    filter: invert(50%);
+}
+
+.item3:hover {
+    background-color: white;
+    color:black;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -242,8 +276,11 @@ img {
     display: block;
     border-bottom: black;
     padding: 4% 20%;
-    margin-top: 4%;
-    font-size: 1.5rem;
+    margin-top: 6%;
+    font-size: 1rem;
+    text-decoration: none;
+    color:white;
+    font-style: italic;
 }
 .lettering1-content {
     position: absolute;
@@ -282,4 +319,39 @@ img {
     height:100%; 
     padding:10px; 
     background-color:black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 20%;
+    /*크기를 나중에 수정해야한다*/
+    background-color: #000;
+    width: 20%;
+    height: 33.33333%; 
+    z-index: 2;
+    padding:0%;
+    margin:0%;
+    background: linear-gradient(90deg, #000, #000, #000, #fff);
+    background-size: 200% 200%;
+    animation: AnimationName 15s ease infinite;
+}
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 100%}
+    50%{background-position:100% 200%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 100%}
+    50%{background-position:100% 200%}
+
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 100%}
+    50%{background-position:100% 200%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 100%}
+    50%{background-position:100% 200%}
 }
